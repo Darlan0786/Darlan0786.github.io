@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRA v3</title>
+  <style>
+    body { margin:0; background:#0b0f1a; color:white; font-family:Arial; overflow:hidden; }
+    canvas { display:block; }
+    #ui {
+      position:fixed;
+      top:10px;
+      left:10px;
+      background:rgba(0,0,0,0.6);
+      padding:10px;
+      border-radius:10px;
+      font-size:14px;
+    }
+    button {
+      margin-top:5px;
+      padding:5px 10px;
+      background:#5c7cff;
+      border:none;
+      color:white;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="ui">
+  <div>HP: <span id="hp"></span></div>
+  <div>Energia: <span id="energy"></span></div>
+  <div>Moedas: <span id="coins"></span></div>
+  <div>Cristais: <span id="crystals"></span></div>
+  <button onclick="Systems.rollBanner()">Girar Banner</button>
+</div>
+
+<script src="systems.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
